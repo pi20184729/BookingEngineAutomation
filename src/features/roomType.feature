@@ -18,4 +18,4 @@ Feature: Roomtype page
     Scenario: : TC_005: Validate whether the user is able to click on the Reserve button
         Given : User launches the view details page
         When : The user clicks on the reserve button
-        Then : the user should be directed to the form page
+        Then : The user should be directed to the form page
