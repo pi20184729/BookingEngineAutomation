@@ -144,7 +144,7 @@ exports.config = {
     cucumberOpts: {
         require: ['@babel/register'],
         // <string[]> (file/dir) require files before executing features
-        require: ['step_definition/launch.steps.js'],
+        require: ['src/step_definition/launch.steps.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
