@@ -1,43 +1,27 @@
 {
   "name": "bookingengineautomation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automation pack to automate journeys over the Booking Engine website.",
   "main": "index.js",
   "scripts": {
     "test": "wdio wdio.conf.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pi20184729/BookingEngineAutomation.git"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rpii/wdio-html-reporter": "0.8.6",
-    "@wdio/allure-reporter": "^6.6.2",
-    "@wdio/cli": "^6.4.2",
-    "@wdio/cucumber-framework": "6.0.13",
-    "@wdio/local-runner": "^6.4.2",
-    "@wdio/spec-reporter": "5.22.4",
-    "@wdio/sync": "6.0.12",
-    "chromedriver": "80.0.2",
-    "cucumber-html-reporter": "5.2.0",
-    "eslint": "^6.8.0",
-    "selenium-standalone": "^6.20.0",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.3",
-    "wdio-cucumber-parallel-execution": "^3.6.7",
-    "wdio-cucumberjs-json-reporter": "1.2.0",
-    "wdio-json-reporter": "^2.0.0",
-    "wdio-video-reporter": "^3.1.1"
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.13.16",
+    "@cucumber/cucumber": "^7.2.1",
+    "@wdio/cli": "^7.7.3",
+    "@wdio/cucumber-framework": "^7.7.3",
+    "@wdio/local-runner": "^7.7.3",
+    "@wdio/spec-reporter": "^7.7.3",
+    "chromedriver": "^91.0.0",
+    "prettier": "^2.3.1",
+    "wdio-chromedriver-service": "^7.1.0"
   },
   "dependencies": {
-    "allure-commandline": "^2.13.0",
-    "expect-webdriverio": "^1.4.0",
-    "experimentalShadowDomSupport": true
-  },
-  "bugs": {
-    "url": "https://github.com/pi20184729/BookingEngineAutomation/issues"
-  },
-  "homepage": "https://github.com/pi20184729/BookingEngineAutomation#readme"
+    "@wdio/sync": "^7.7.3"
+  }
 }

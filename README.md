@@ -1,1 +1,1 @@
-# BookingEngineAutomation
+Automation pack to automate journeys for the "Booking Engine" website built on WebdriverIO V7, using Cucumber BDD framework.
