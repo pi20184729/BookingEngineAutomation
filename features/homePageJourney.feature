@@ -7,3 +7,13 @@ Feature: To automate the home page journey
         And User selects number of children
         And User clicks on the search button
         And User clicks on the view details
+        And User selects the number of AC rooms
+        And User clicks on the Deluxe AC increment button and include food checkbox
+        # And User compares the total price with the total number of rooms selected
+        And User clicks on the reserve button
+        And User enters the first name
+        And User enters the last name
+        And User enters the contact number
+        And User enters the email id
+        And User enters the address
+        And User clicks the pay now button

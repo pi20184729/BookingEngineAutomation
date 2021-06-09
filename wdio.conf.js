@@ -135,7 +135,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [
+        [
+            'cucumberjs-json', {
+                jsonFolder: './reports/json',
+                language: 'en',
+            }
+        ]
+    ],
     port: 4444,
 
     //
