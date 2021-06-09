@@ -1,4 +1,5 @@
 import homePageLocators from '../locators/homePageLocators'
+// import roomTypePageLocators from '..roomTypePageLocators'
 import Pause from '../Pause'
 
 class homePage extends homePageLocators{
@@ -48,9 +49,76 @@ class homePage extends homePageLocators{
     }
     chooseViewDetails(){
         this.VIEW_DETAILS.waitForExist()
+        Pause.pauseMedium()
         this.VIEW_DETAILS.click()
         Pause.pauseLong()
-    }   
+    } 
+    chooseACIncrement(){
+        this.ADD_AC_INCREMENT.waitForExist()
+        this.ADD_AC_INCREMENT.click()
+        this.ADD_AC_INCREMENT.click()
+        Pause.pauseMedium()
+        this.SUB_AC_INCREMENT.click()
+        Pause.pauseShort()
+    }
+    chooseDeluxeACIncrement(){
+        this.ADD_DELUXE_INCREMENT.waitForExist()
+        this.ADD_DELUXE_INCREMENT.click()
+        this.ADD_DELUXE_INCREMENT.click()
+        Pause.pauseMedium()
+        this.INCLUDE_FOOD_CHECK_DELUXE.click()
+        Pause.pauseShort()
+    }
+    // comparePrice(){
+    //     const acPrice = this.TOTAL_AC_PRICE.getValue()
+    //     const deluxePrice = this.TOTAL_DELUXE_PRICE.getText()
+    //     const totalPrice = this.TOTAL_PRICE.getText()
+    //     console.log(acPrice)
+    //     console.log(deluxePrice + acPrice)
+    //     console.log(totalPrice)
+    // }
+    chooseReserveButton(){
+        console.log(this.TOTAL_AC_PRICE.getText())
+        this.RESERVE_BUTTON.waitForExist()
+        this.RESERVE_BUTTON.click()
+        Pause.pauseMedium()
+    }
+    enterFirstName() {
+        this.FIRST_NAME.waitForExist()
+        this.FIRST_NAME.click()
+        this.FIRST_NAME.setValue('Aishwarya')
+        Pause.pauseShort()
+    }
+    enterLastName() {
+        this.LAST_NAME.waitForExist()
+        this.LAST_NAME.click()
+        this.LAST_NAME.setValue('R')
+        Pause.pauseShort()
+    }  
+    enterContact() {
+        this.CONTACT.waitForExist()
+        this.CONTACT.click()
+        this.CONTACT.setValue('3245167233')
+        Pause.pauseShort()
+    }  
+    enterEmail() {
+        this.EMAIL.waitForExist()
+        this.EMAIL.click()
+        this.EMAIL.setValue('Chennai@gmail.com')
+        Pause.pauseShort()
+    }  
+    enterAddress() {
+        this.ADDRESS.waitForExist()
+        this.ADDRESS.click()
+        this.ADDRESS.setValue('Chennai')
+        Pause.pauseShort()
+    }
+    choosePayNowbutton() {
+        this.PAY_NOW_BUTTON.waitForExist()
+        this.PAY_NOW_BUTTON.click()
+        Pause.pauseMedium()
+    }    
+    
 }
 
 export default new homePage()
