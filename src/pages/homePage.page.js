@@ -69,16 +69,27 @@ class homePage extends homePageLocators{
         this.INCLUDE_FOOD_CHECK_DELUXE.click()
         Pause.pauseShort()
     }
-    // comparePrice(){
-    //     const acPrice = this.TOTAL_AC_PRICE.getValue()
-    //     const deluxePrice = this.TOTAL_DELUXE_PRICE.getText()
-    //     const totalPrice = this.TOTAL_PRICE.getText()
-    //     console.log(acPrice)
-    //     console.log(deluxePrice + acPrice)
-    //     console.log(totalPrice)
-    // }
+    comparePrice(){
+        var price1 = this.TOTAL_AC_PRICE.getText()
+        var acPrice = parseInt(price1.slice(8,12))
+        console.log("The price of the AC rooms selected is " + acPrice)
+
+        var price2 = this.TOTAL_DELUXE_PRICE.getText()
+        var deluxePrice = parseInt(price2.slice(8,12))
+        console.log("The price of the deluxe AC rooms selected is " + deluxePrice)
+
+        var price3 = this.TOTAL_PRICE.getText()
+        var totalPrice = parseInt(price3.slice(12,16))
+        console.log("The total price of the rooms selected is " + totalPrice)
+
+        if((acPrice + deluxePrice) === totalPrice){
+            console.log("Sum of all the room prices equals to total price displayed")
+        }
+        else{
+            throw new Error("Sum of all the room prices is not equal to total price displayed'")
+        }
+    }
     chooseReserveButton(){
-        console.log(this.TOTAL_AC_PRICE.getText())
         this.RESERVE_BUTTON.waitForExist()
         this.RESERVE_BUTTON.click()
         Pause.pauseMedium()

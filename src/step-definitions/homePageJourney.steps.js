@@ -25,9 +25,9 @@ When('User selects the number of AC rooms', () => {
 When('User clicks on the Deluxe AC increment button and include food checkbox', () => {
     homePage.chooseDeluxeACIncrement()
 })
-// When('User compares the total price with the total number of rooms selected', () => {
-//     homePage.comparePrice()
-// })
+When('User compares the total price with the total number of rooms selected', () => {
+    homePage.comparePrice()
+})
 When('User clicks on the reserve button', () => {
     homePage.chooseReserveButton()
 })
