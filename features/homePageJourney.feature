@@ -9,7 +9,7 @@ Feature: To automate the home page journey
         And User clicks on the view details
         And User selects the number of AC rooms
         And User clicks on the Deluxe AC increment button and include food checkbox
-        # And User compares the total price with the total number of rooms selected
+        And User compares the total price with the total number of rooms selected
         And User clicks on the reserve button
         And User enters the first name
         And User enters the last name

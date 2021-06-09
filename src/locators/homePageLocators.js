@@ -92,10 +92,10 @@ class homePageLocators {
         return $('//*[@id="AC"]/div/div[2]/div[2]/div[1]/div/div[4]/h3')
     }
     get TOTAL_DELUXE_PRICE(){
-        return $('//*[@id="Deluxe AC"]/div/div[2]/div[2]/div[1]/div/div[4]/h3/text()[2]')
+        return $('//*[@id="Deluxe AC"]/div/div[2]/div[2]/div[1]/div/div[4]/h3')
     }
     get TOTAL_PRICE(){
-        return $('//*[@id="root"]/div/div[2]/div/div[3]/div/div/div[3]/div[1]/h3/span/text()[2]')
+        return $('//*[@id="root"]/div/div[2]/div/div[3]/div/div/div[3]/div[1]/h3')
     }
     get FIRST_NAME(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/input')
