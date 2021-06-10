@@ -82,7 +82,7 @@ class homePage extends homePageLocators{
         var totalPrice = parseInt(price3.slice(12,16))
         console.log("The total price of the rooms selected is " + totalPrice)
 
-        if((acPrice + deluxePrice) === totalPrice){
+        if((acPrice + deluxePrice) == totalPrice){
             console.log("Sum of all the room prices equals to total price displayed")
         }
         else{
@@ -112,7 +112,7 @@ class homePage extends homePageLocators{
         var amount = parseInt(price4)
         console.log("The GST on the rooms selected is " + amount)
 
-        if((price + gst - discount) === amount){
+        if((price + gst - discount) == amount){
             console.log("Total price including GST and discount equals to total price displayed")
         }
         else{
@@ -179,7 +179,64 @@ class homePage extends homePageLocators{
         this.BACK_TO_HOME.click()
         Pause.pauseShort()
     }
-    
+
+
+    // negativejourney
+
+    chooseViewDetail(){
+        this.VIEW_DETAIL.waitForExist()
+        Pause.pauseMedium()
+        this.VIEW_DETAIL.click()
+        Pause.pauseLong()
+    }
+    chooseNonACIncrement(){
+        this.ADD_NON_AC_INCREMENT.waitForExist()
+        this.ADD_NON_AC_INCREMENT.click()
+        this.ADD_NON_AC_INCREMENT.click()
+        Pause.pauseMedium()
+    }
+    chooseNReserveButton(){
+        this.N_RESERVE_BUTTON.waitForExist()
+        this.N_RESERVE_BUTTON.click()
+        Pause.pauseMedium()
+    }   
+    enterFName() {
+        this.F_NAME.waitForExist()
+        this.F_NAME.click()
+        this.F_NAME.setValue('Sherin')
+        Pause.pauseShort()
+    }
+    enterLName() {
+        this.L_NAME.waitForExist()
+        this.L_NAME.click()
+        this.L_NAME.setValue('F')
+        Pause.pauseShort()
+    }  
+    enterContactN() {
+        this.CONTACTN.waitForExist()
+        this.CONTACTN.click()
+        this.CONTACTN.setValue('32451672334334435')
+        Pause.pauseShort()
+    }  
+    enterEmailId() {
+        this.EMAILID.waitForExist()
+        this.EMAILID.click()
+        this.EMAILID.setValue('xyz')
+        Pause.pauseShort()
+    }  
+    enterAddressP() {
+        this.ADDRESSP.waitForExist()
+        this.ADDRESSP.click()
+        this.ADDRESSP.setValue('Chennai')
+        Pause.pauseShort()
+    }
+    choosePaybutton() {
+        this.PAY_BUTTON.waitForExist()
+        this.PAY_BUTTON.click()
+        Pause.pauseMedium()
+    }    
+
+
 }
 
 export default new homePage()

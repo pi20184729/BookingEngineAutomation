@@ -22,4 +22,13 @@ Feature: To automate the home page journey
         And User enters the UPI ID
         And User clicks on Make Payment button
         And User clicks on back to home button
-
+#negative journey
+        And User clicks on view detail
+        And User selects the number of non ac rooms
+        And User clicks on the nreserve button
+        And User enters the firstname
+        And User enters the lastname
+        And User enters invalid contact number
+        And User enters invalid email id
+        And User enters address
+        And User clicks the pay button

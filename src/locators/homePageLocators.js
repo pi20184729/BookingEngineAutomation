@@ -16,6 +16,9 @@ class homePageLocators {
     get VIEW_DETAILS() {
         return $('//*[@id="Emerald bay"]') //Five points Hotel
     }
+    get VIEW_DETAIL() {
+        return $('//*[@id="Black pearl"]') //Five points Hotel
+    }
     get CAROUSEL_PREV_ICON() {
         return $('//*[@id="root"]/div/div[2]/div/div[2]/div/div[1]/div/a[1]/span[1]')
     }
@@ -144,6 +147,34 @@ class homePageLocators {
     }
     get BACK_TO_HOME(){
         return $('/html/body/div[2]/div[3]/div[2]/a/button')
+    }
+    // negative journey
+    get VIEW_DETAIL() {
+        return $('//*[@id="Black pearl"]') //Five points Hotel
+    }
+    get ADD_NON_AC_INCREMENT(){
+        return $('//*[@id="Non-AC"]/div/div[2]/div[2]/div[2]/div/div[1]/button[2]')
+    }
+    get N_RESERVE_BUTTON(){
+        return $('//*[@id="root"]/div/div[2]/div/div[3]/div/div/div[3]/div[2]/a')
+    }
+    get F_NAME(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/input')
+    }
+    get L_NAME(){
+        return $('// *[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[2]/div/div[2]/div[2]/div/input')    
+    }
+    get CONTACTN(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[2]/div/div[3]/div[2]/div/input')
+    }
+    get EMAILID(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[2]/div/div[4]/div[2]/div/input')
+    }
+    get ADDRESSP(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[2]/div/div[5]/div[2]/div/div/input')
+    }
+    get PAY_BUTTON(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[3]/button')
     }
 
 }
