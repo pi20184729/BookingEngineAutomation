@@ -69,3 +69,34 @@ When('User clicks on back to home button', () => {
     homePage.chooseBackToHomeButton()
 })
 
+
+//neegative journey
+
+
+When('User clicks on view detail', () => {
+    homePage.chooseViewDetail()
+})
+When('User selects the number of non ac rooms', () => {
+    homePage.chooseNonACIncrement()
+})
+When('User clicks on the nreserve button', () => {
+    homePage.chooseNReserveButton()
+})
+When('User enters the firstname', () => {
+    homePage.enterFName()
+})
+When('User enters the lastname', () => {
+    homePage.enterLName()
+})
+When('User enters invalid contact number', () => {
+    homePage.enterContactN()
+})
+When('User enters invalid email id', () => {
+    homePage.enterEmailId()
+})
+When('User enters address', () => {
+    homePage.enterAddressP()
+})
+When('User clicks the pay button', () => {
+    homePage.choosePaybutton()
+})
