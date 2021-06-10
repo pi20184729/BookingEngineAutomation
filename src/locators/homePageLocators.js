@@ -115,6 +115,24 @@ class homePageLocators {
     get PAY_NOW_BUTTON(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[1]/div[3]/button')
     }
+    get TOT_AC_PRICE(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[2]/div[4]')
+        }
+        get TOT_DELUXE_PRICE(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[3]/div[4]')
+        }
+        get TOT_AMOUNT(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[4]/div[4]')
+        }
+        get GST(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[5]/div[4]')
+        }
+        get DISCOUNT(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[6]/div[4]')
+        }
+        get TOT_PRICE(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[2]/div/p[2]')
+        }
 }
 
 export default homePageLocators
