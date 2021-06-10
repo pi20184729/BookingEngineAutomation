@@ -117,22 +117,35 @@ class homePageLocators {
     }
     get TOT_AC_PRICE(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[2]/div[4]')
-        }
-        get TOT_DELUXE_PRICE(){
+    }
+    get TOT_DELUXE_PRICE(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[3]/div[4]')
-        }
-        get TOT_AMOUNT(){
+    }
+    get TOT_AMOUNT(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[4]/div[4]')
-        }
-        get GST(){
+    }
+    get GST(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[5]/div[4]')
-        }
-        get DISCOUNT(){
+    }
+    get DISCOUNT(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[1]/div[6]/div[4]')
-        }
-        get TOT_PRICE(){
+    }
+    get TOT_PRICE(){
         return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/form/div[2]/div[2]/div[2]/div[2]/div[2]/div/p[2]')
-        }
+    }  
+    get UPI(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[1]/div[3]/button')
+    }  
+    get UPI_ID(){
+        return $('//*[@id="root"]/div/div[2]/div/div/div/div[2]/div/div/div[1]/input')
+    }
+    get MAKE_PAYMENT(){
+        return $('//*[@id="paymentbuttonLast"]')
+    }
+    get BACK_TO_HOME(){
+        return $('/html/body/div[2]/div[3]/div[2]/a/button')
+    }
+
 }
 
 export default homePageLocators
