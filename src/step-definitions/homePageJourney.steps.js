@@ -31,6 +31,9 @@ When('User compares the total price with the total number of rooms selected', ()
 When('User clicks on the reserve button', () => {
     homePage.chooseReserveButton()
 })
+When('User comapres the total price including GST and discount with the displayed total price', () => {
+    homePage.compareFinalPrice()
+})
 When('User enters the first name', () => {
     homePage.enterFirstName()
 })
@@ -50,5 +53,19 @@ When('User clicks the pay now button', () => {
     homePage.choosePayNowbutton()
 })
 
-// When('User clicks on include food checkbox', () => {
-// })
+When('User clicks on UPI payments option', () => {
+    homePage.chooseUPI()
+})
+
+When('User enters the UPI ID', () => {
+    homePage.enterUPIID()
+})
+
+When('User clicks on Make Payment button', () => {
+    homePage.chooseMakePayment()
+})
+
+When('User clicks on back to home button', () => {
+    homePage.chooseBackToHomeButton()
+})
+

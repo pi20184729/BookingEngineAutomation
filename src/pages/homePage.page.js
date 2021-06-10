@@ -86,7 +86,7 @@ class homePage extends homePageLocators{
             console.log("Sum of all the room prices equals to total price displayed")
         }
         else{
-            throw new Error("Sum of all the room prices is not equal to total price displayed'")
+            throw new Error("Sum of all the room prices is not equal to total price displayed")
         }
     }
     chooseReserveButton(){
@@ -94,6 +94,33 @@ class homePage extends homePageLocators{
         this.RESERVE_BUTTON.click()
         Pause.pauseMedium()
     }
+
+    compareFinalPrice(){
+        var price1 = this.TOT_AMOUNT.getText()
+        var price = parseInt(price1)
+        console.log("The price of the rooms selected is " + price)
+
+        var price2 = this.GST.getText()
+        var gst = parseInt(price2)
+        console.log("The GST on the rooms selected is " + gst)
+
+        var price3 = this.DISCOUNT.getText()
+        var discount = parseInt(price3)
+        console.log("The GST on the rooms selected is " + discount)
+
+        var price4 = this.TOT_PRICE.getText()
+        var amount = parseInt(price4)
+        console.log("The GST on the rooms selected is " + amount)
+
+        if((price + gst - discount) === amount){
+            console.log("Total price including GST and discount equals to total price displayed")
+        }
+        else{
+            throw new Error("Total price including GST and discount is not equal to total price displayed")
+        }
+
+    }
+
     enterFirstName() {
         this.FIRST_NAME.waitForExist()
         this.FIRST_NAME.click()
@@ -129,6 +156,29 @@ class homePage extends homePageLocators{
         this.PAY_NOW_BUTTON.click()
         Pause.pauseMedium()
     }    
+    chooseUPI(){
+        this.UPI.waitForExist()
+        this.UPI.click()
+        Pause.pauseShort()
+    }
+
+    enterUPIID(){
+        this.UPI_ID.waitForExist()
+        this.UPI_ID.setValue('pinaksharma99@okaxis')
+        Pause.pauseShort()
+    }
+
+    chooseMakePayment(){
+        this.MAKE_PAYMENT.waitForExist()
+        this.MAKE_PAYMENT.click()
+        Pause.pauseShort()
+    }
+
+    chooseBackToHomeButton(){
+        this.BACK_TO_HOME.waitForExist()
+        this.BACK_TO_HOME.click()
+        Pause.pauseShort()
+    }
     
 }
 

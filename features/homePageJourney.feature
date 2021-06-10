@@ -11,9 +11,15 @@ Feature: To automate the home page journey
         And User clicks on the Deluxe AC increment button and include food checkbox
         And User compares the total price with the total number of rooms selected
         And User clicks on the reserve button
+        And User comapres the total price including GST and discount with the displayed total price
         And User enters the first name
         And User enters the last name
         And User enters the contact number
         And User enters the email id
         And User enters the address
         And User clicks the pay now button
+        And User clicks on UPI payments option
+        And User enters the UPI ID
+        And User clicks on Make Payment button
+        And User clicks on back to home button
+
