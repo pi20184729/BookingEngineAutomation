@@ -82,7 +82,7 @@ class homePage extends homePageLocators{
         var totalPrice = parseInt(price3.slice(12,16))
         console.log("The total price of the rooms selected is " + totalPrice)
 
-        if((acPrice + deluxePrice) === totalPrice){
+        if((acPrice + deluxePrice) == totalPrice){
             console.log("Sum of all the room prices equals to total price displayed")
         }
         else{
@@ -123,6 +123,14 @@ class homePage extends homePageLocators{
         this.ADDRESS.click()
         this.ADDRESS.setValue('Chennai')
         Pause.pauseShort()
+    }
+    comparePayNowPrice(){
+        var p1 = this.TOT_AC_PRICE.getText()
+        console.log(p1)
+
+        // var p2 = this.TOT_DELUXE_PRICE.getvalue()
+        // var 
+        
     }
     choosePayNowbutton() {
         this.PAY_NOW_BUTTON.waitForExist()

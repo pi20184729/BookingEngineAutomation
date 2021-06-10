@@ -50,5 +50,5 @@ When('User clicks the pay now button', () => {
     homePage.choosePayNowbutton()
 })
 
-// When('User clicks on include food checkbox', () => {
-// })
+When('User clicks on include food checkbox', () => {
+})
