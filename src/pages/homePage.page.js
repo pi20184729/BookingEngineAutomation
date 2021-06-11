@@ -183,6 +183,7 @@ class homePage extends homePageLocators{
 
     // negativejourney
 
+
     chooseViewDetail(){
         this.VIEW_DETAIL.waitForExist()
         Pause.pauseMedium()

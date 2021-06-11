@@ -14,10 +14,10 @@ class homePageLocators {
         return $('//*[@class="searchButton"]')
     }
     get VIEW_DETAILS() {
-        return $('//*[@id="Emerald bay"]') //Five points Hotel
+        return $('//*[@id="Emerald bay"]') //Emerald bay Hotel
     }
     get VIEW_DETAIL() {
-        return $('//*[@id="Black pearl"]') //Five points Hotel
+        return $('//*[@id="Black pearl"]') //Black Pearl Hotel
     }
     get CAROUSEL_PREV_ICON() {
         return $('//*[@id="root"]/div/div[2]/div/div[2]/div/div[1]/div/a[1]/span[1]')
@@ -46,9 +46,7 @@ class homePageLocators {
     get CLICK_ANYWHERE() {
         return $('//*[@id="simple-menu"]/div[1]')
     }
-    // get REGENCY() {
-    //     return $('//*[text() = "Regency"]')
-    // }
+
     get ADD_AC_INCREMENT() {
         return $('//*[@id="AC"]/div/div[2]/div[2]/div[2]/div/div[1]/button[2]')
     }
