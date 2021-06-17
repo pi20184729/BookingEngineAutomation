@@ -72,6 +72,22 @@ When('User clicks on back to home button', () => {
 
 //neegative journey
 
+When('The user clicks on the Enter City drop down and enter a city', () => {
+    homePage.enterCity2()    
+})
+When('User click on the date picker', () => {
+    homePage.chooseDates()
+})
+When('User selects number of adult', () => {
+    homePage.chooseAdults()
+})
+When('User selects number of child', () => {
+    homePage.chooseChild()
+})
+When('User clicks on search button', () => {
+    homePage.chooseSearch()
+})
+
 
 When('User clicks on view detail', () => {
     homePage.chooseViewDetail()

@@ -49,7 +49,7 @@ class homePage extends homePageLocators{
     }
     chooseViewDetails(){
         this.VIEW_DETAILS.waitForExist()
-        Pause.pauseMedium()
+        Pause.pauseLong()
         this.VIEW_DETAILS.click()
         Pause.pauseLong()
     } 
@@ -183,10 +183,15 @@ class homePage extends homePageLocators{
 
     // negativejourney
 
+    enterCity2() {
+        this.ENTER_CITY_SEARCH_BOX.waitForExist()
+        this.ENTER_CITY_SEARCH_BOX.setValue('hyderabad')
+        Pause.pauseShort()
+    }  
 
     chooseViewDetail(){
         this.VIEW_DETAIL.waitForExist()
-        Pause.pauseMedium()
+        Pause.pauseLong()
         this.VIEW_DETAIL.click()
         Pause.pauseLong()
     }
@@ -204,13 +209,13 @@ class homePage extends homePageLocators{
     enterFName() {
         this.F_NAME.waitForExist()
         this.F_NAME.click()
-        this.F_NAME.setValue('Sherin')
+        this.F_NAME.setValue('Pinak')
         Pause.pauseShort()
     }
     enterLName() {
         this.L_NAME.waitForExist()
         this.L_NAME.click()
-        this.L_NAME.setValue('F')
+        this.L_NAME.setValue('Sharma')
         Pause.pauseShort()
     }  
     enterContactN() {
@@ -228,7 +233,7 @@ class homePage extends homePageLocators{
     enterAddressP() {
         this.ADDRESSP.waitForExist()
         this.ADDRESSP.click()
-        this.ADDRESSP.setValue('Chennai')
+        this.ADDRESSP.setValue('Jaipur')
         Pause.pauseShort()
     }
     choosePaybutton() {
@@ -236,8 +241,6 @@ class homePage extends homePageLocators{
         this.PAY_BUTTON.click()
         Pause.pauseMedium()
     }    
-
-
 }
 
 export default new homePage()

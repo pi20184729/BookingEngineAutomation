@@ -25,7 +25,12 @@ Feature: To automate the home page journey
     #negative journey
     Scenario: Validate if the user is not able to book with wrong details
         Given User launches the BookingEngine URL
-        When User clicks on view detail
+        When The user clicks on the Enter City drop down and enter a city
+        And User click on the date picker
+        And User selects number of adult
+        And User selects number of child
+        And User clicks on search button
+        And User clicks on view detail
         And User selects the number of non ac rooms
         And User clicks on the nreserve button
         And User enters the firstname
