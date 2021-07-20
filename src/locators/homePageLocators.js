@@ -26,10 +26,10 @@ class homePageLocators {
         return $('//*[@id="root"]/div/div[2]/div/div[2]/div/div[1]/div/a[2]/span[1]')
     }
     get CHECK_IN_DATE() {
-        return $('//*[text() = "15"]')
+        return $('//*[text() = "23"]')
     }
     get CHECK_OUT_DATE() {
-        return $('//*[text() = "19"]')
+        return $('//*[text() = "26"]')
     }
     get APPLY_DATE_BUTTON() {
         return $('//*[@id="ej2-datetimepicker_0_popup"]/div[2]/button[1]')
